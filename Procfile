@@ -1,1 +1,1 @@
-web:gunicorn Covid-19 global cases:server
+web: gunicorn Covid-19 global cases:server
