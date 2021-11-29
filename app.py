@@ -23,7 +23,7 @@ df2 = pd.read_csv("https://raw.githubusercontent.com/Xiaohulala/Scientific-Visua
 all_continents = df2.continent.unique()
 
 df3 = pd.read_csv(
-    "https://raw.githubusercontent.com/Xiaohulala/Scientific-Visualization/master/worldometer_coronavirus_monthly_data.csv")
+    "https://raw.githubusercontent.com/Xiaohulala/scientific-visualization-final-project/master/worldometer_coronavirus_monthly_data.csv")
 
 app = dash.Dash(__name__)
 server = app.server
