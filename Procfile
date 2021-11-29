@@ -1,1 +1,1 @@
-web:gunicorn Covid-19 global cases.py:app
+web:gunicorn Covid-19 global cases.py
