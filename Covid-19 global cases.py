@@ -26,6 +26,7 @@ df3 = pd.read_csv(
     "https://raw.githubusercontent.com/Xiaohulala/Scientific-Visualization/master/worldometer_coronavirus_monthly_data.csv")
 
 app = dash.Dash(__name__)
+server = app.server
 
 # Chart 1: Covid-19 Cases Per Million Population
 fig1 = go.Figure(go.Choroplethmapbox(geojson=countries, locations=df1.country, z=df1.total_cases_per_1m_population,
@@ -126,4 +127,5 @@ def update_scatter_plot(val):
 
 if __name__ == '__main__':
     app.run_server(debug=True)
+
 
